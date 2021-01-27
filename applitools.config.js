@@ -33,6 +33,8 @@ module.exports = {
 
     //tapFilePath: './output',
     jsonFilePath: './output',
+    
+    showLogs: true,
      
 
     //showEyesSdkLogs: true, // default is disabled
