@@ -8,6 +8,7 @@ module.exports = {
     appName: 'My Storybook',
     showLogs: true,
     batchName: 'MyStorybookBatch',
+    batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
     
     // include: ({name, kind, parameters}) => {
