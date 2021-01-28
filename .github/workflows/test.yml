@@ -31,5 +31,7 @@ jobs:
        with:
          node-version: '10.x'
      - run: npm ci
+     - name: install deps
+       run: yarn
      - name: Run Tests
-       run: node_modules/.bin/eyes-storybook --conf applitools.config.js
+       run: yarn eyes-storybook --conf applitools.config.js
