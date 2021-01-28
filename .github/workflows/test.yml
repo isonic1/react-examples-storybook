@@ -34,6 +34,6 @@ jobs:
      - name: install deps
        run: npm install
      - name: build storybook
-       run: npm build-storybook
+       run: npx build-storybook
      - name: Run Tests
        run: npx eyes-storybook --conf applitools.config.js
