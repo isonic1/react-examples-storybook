@@ -33,5 +33,7 @@ jobs:
      - run: npm ci
      - name: install deps
        run: yarn
+     - name: build storybook
+       run: yarn build-storybook
      - name: Run Tests
        run: yarn eyes-storybook --conf applitools.config.js

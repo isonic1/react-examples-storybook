@@ -38,10 +38,10 @@ module.exports = {
     
     readStoriesTimeout: 180000,
     
-    puppeteerOptions: {
-        executablePath: '/usr/bin/google-chrome',
-        { args: ['--no-sandbox'], headless: true, devtools: true}
-    },
+    // puppeteerOptions: {
+    //     executablePath: '/usr/bin/google-chrome',
+    //     { args: ['--no-sandbox'], headless: true, devtools: true}
+    // },
     
      
 
