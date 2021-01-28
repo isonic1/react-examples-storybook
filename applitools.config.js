@@ -43,7 +43,7 @@ module.exports = {
         executablePath: '/usr/bin/google-chrome',
         args: ['--no-sandbox'], 
         headless: false, 
-        devtools: true
+        devtools: false
     },
     
      
