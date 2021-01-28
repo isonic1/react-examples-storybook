@@ -37,6 +37,13 @@ module.exports = {
     showLogs: true,
     
     readStoriesTimeout: 180000,
+    
+    runInDocker: true,
+    
+    puppeteerOptions: {
+        executablePath: '/usr/bin/chromium-browser'
+    },
+    
      
 
     //showEyesSdkLogs: true, // default is disabled
