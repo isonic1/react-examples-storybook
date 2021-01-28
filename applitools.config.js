@@ -37,11 +37,12 @@ module.exports = {
     showLogs: true,
     
     readStoriesTimeout: 180000,
+    waitBeforeScreenshot: 250,
     
-    // puppeteerOptions: {
-    //     executablePath: '/usr/bin/google-chrome',
-    //     { args: ['--no-sandbox'], headless: true, devtools: true}
-    // },
+    puppeteerOptions: {
+        executablePath: '/usr/bin/google-chrome',
+        { args: ['--no-sandbox'], headless: true, devtools: true}
+    },
     
      
 
