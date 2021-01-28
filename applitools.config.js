@@ -38,8 +38,6 @@ module.exports = {
     
     readStoriesTimeout: 180000,
     
-    runInDocker: true,
-    
     puppeteerOptions: {
         executablePath: '/usr/bin/chromium-browser'
     },
