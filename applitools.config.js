@@ -40,7 +40,7 @@ module.exports = {
     waitBeforeScreenshot: 250,
     
     puppeteerOptions: {
-        executablePath: '/usr/bin/chromium-browser'
+        executablePath: '/usr/bin/google-chrome'
     },
     
      
