@@ -24,7 +24,6 @@ module.exports = {
     // ],
  
     browser: [
-       { deviceName: 'iPhone X', screenOrientation: 'portrait'  },
        { width: 800,   height: 600, name: 'firefox' },
        { width: 1000,  height: 600, name: 'chrome'  },
     ],
