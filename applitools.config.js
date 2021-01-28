@@ -23,7 +23,7 @@ module.exports = {
     showLogs: true,
     
     readStoriesTimeout: 180000,
-    waitBeforeScreenshot: 250,
+    waitBeforeScreenshot: 10000,
     
     puppeteerOptions: {
         executablePath: '/usr/bin/google-chrome',
