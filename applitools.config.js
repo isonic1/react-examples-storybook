@@ -32,7 +32,7 @@ module.exports = {
     concurrency: 50,
 
     //tapFilePath: './output',
-    jsonFilePath: './output',
+    //jsonFilePath: './output',
     
     showLogs: true,
     
