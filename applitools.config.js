@@ -35,6 +35,8 @@ module.exports = {
     jsonFilePath: './output',
     
     showLogs: true,
+    
+    readStoriesTimeout: 180000,
      
 
     //showEyesSdkLogs: true, // default is disabled
