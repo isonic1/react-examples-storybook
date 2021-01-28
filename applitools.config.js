@@ -4,24 +4,11 @@ module.exports = {
     
     /* Server configuration */
     serverUrl: "https://eyesapi.applitools.com",
-    apiKey: process.env.APPLITOOLS_API_KEY,  // as default used value from environment variable
+    apiKey: "7499RRiqRDACEiJb6R5wUX8NsfB2109oY446i101H3w3F6Xg110",  // as default used value from environment variable
     appName: 'My Storybook',
     showLogs: true,
     batchName: 'MyStorybookBatch',
-    batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
-    
-    // include: ({name, kind, parameters}) => {
-    //     return /to Storybook/.test(name)
-    // },
-
-    // ignoreRegions: [
-    //     { selector: '#root > div > header > img' }
-    // ],
-       
-    // browser: [
-    //    { width: 500,   height: 600, name: 'chrome'  }
-    // ],
  
     browser: [
        { width: 800,   height: 600, name: 'firefox' },
