@@ -22,18 +22,11 @@ module.exports = {
     
     showLogs: true,
     
-    readStoriesTimeout: 180000,
-    waitBeforeScreenshot: 10000,
-    
-    puppeteerOptions: {
-        executablePath: '/usr/bin/google-chrome',
-        headless: true, 
-        devtools: true,
-        args: ['--no-sandbox']
-    },
+    waitBeforeScreenshot: 1000,
+    readStoriesTimeout: 30000,
+    puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
     
      
-
     //showEyesSdkLogs: true, // default is disabled
 
     //showStorybookOutput: true, // default is disabled
