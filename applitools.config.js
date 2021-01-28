@@ -40,7 +40,8 @@ module.exports = {
     waitBeforeScreenshot: 250,
     
     puppeteerOptions: {
-        executablePath: '/usr/bin/google-chrome'
+        executablePath: '/usr/bin/google-chrome',
+        { args: ['--no-sandbox'], headless: false, devtools: true}
     },
     
      
