@@ -39,7 +39,7 @@
 #        run: npx eyes-storybook --conf applitools.config.js
 # This is a basic workflow to help you get started with Actions
 
-name: Applitools Storybook Test
+name: CI
 
 # Controls when the action will run. 
 on:
