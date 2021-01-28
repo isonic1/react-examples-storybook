@@ -39,7 +39,8 @@ module.exports = {
     readStoriesTimeout: 180000,
     
     puppeteerOptions: {
-        executablePath: '/usr/bin/chromium-browser'
+        executablePath: '/usr/bin/google-chrome',
+        { args: ['--no-sandbox'], headless: true, devtools: true}
     },
     
      
