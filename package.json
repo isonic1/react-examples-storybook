@@ -1,5 +1,5 @@
 {
-  "name": "Storybook Test",
+  "name": "Storybook-Test",
   "scripts": {
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o .dist",
