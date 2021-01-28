@@ -41,9 +41,7 @@ module.exports = {
     
     puppeteerOptions: {
         executablePath: '/usr/bin/google-chrome',
-        args: ['--no-sandbox'], 
-        headless: false, 
-        devtools: false
+        args: {['--no-sandbox'], headless: false, devtools: true}
     },
     
      
