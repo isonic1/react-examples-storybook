@@ -18,20 +18,10 @@ module.exports = {
 
     concurrency: 50,
 
-    //tapFilePath: './output',
-    //jsonFilePath: './output',
-    
     showLogs: true,
     
     waitBeforeScreenshot: 1000,
     readStoriesTimeout: 30000,
     puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
     
-     
-    //showEyesSdkLogs: true, // default is disabled
-
-    //showStorybookOutput: true, // default is disabled
-       
-    //saveDebugData: true,
-
 };
