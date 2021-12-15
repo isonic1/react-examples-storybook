@@ -10,6 +10,7 @@ module.exports = {
     batchName: 'MyStorybookBatch',
     batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
+    saveFailedTests: true,
  
     browser: [
        { width: 800,   height: 600, name: 'firefox' },
