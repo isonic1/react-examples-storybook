@@ -13,7 +13,7 @@ module.exports = {
     saveFailedTests: true,
  
     browser: [
-       { width: 800,   height: 600, name: 'firefox' },
+       { width: 800,   height: 1000, name: 'firefox' },
        { width: 1000,  height: 600, name: 'chrome'  },
     ],
 
