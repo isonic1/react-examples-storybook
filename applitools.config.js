@@ -1,3 +1,9 @@
+// if(process.env.APPLITOOLS_BATCH_ID){
+//   const batchName = 'StorybookCI',
+// } else {
+//    const batchName = 'StorybookLocal',
+// }
+
 module.exports = {
     
     //https://www.npmjs.com/package/@applitools/eyes-storybook
@@ -6,7 +12,11 @@ module.exports = {
     serverUrl: "https://eyesapi.applitools.com",
     apiKey: process.env.APPLITOOLS_API_KEY,  // as default used value from environment variable
     appName: 'My Storybook',
-    batchName: 'MyStorybookBatch',
+    
+  batchName: process.env.CI
+        ? undefined
+        : 'StorbookLocal',
+    
     batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
     // saveFailedTests: true,
