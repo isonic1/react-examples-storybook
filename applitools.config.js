@@ -6,7 +6,6 @@ module.exports = {
     serverUrl: "https://eyesapi.applitools.com",
     apiKey: process.env.APPLITOOLS_API_KEY,  // as default used value from environment variable
     appName: 'My Storybook',
-    showLogs: true,
     batchName: 'MyStorybookBatch',
     batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
@@ -23,6 +22,6 @@ module.exports = {
     
     waitBeforeScreenshot: 1000,
     readStoriesTimeout: 30000,
-    puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
+    //puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
     
 };
