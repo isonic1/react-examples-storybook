@@ -22,6 +22,6 @@ module.exports = {
     
     waitBeforeScreenshot: 1000,
     readStoriesTimeout: 30000,
-    puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
+    //puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
     
 };
