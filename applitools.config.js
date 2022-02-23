@@ -26,7 +26,7 @@ module.exports = {
        { width: 1000,  height: 600, name: 'chrome'  },
     ],
 
-    concurrency: 50,
+    testConcurrency: 50,
 
     showLogs: true,
     
