@@ -1,34 +1,32 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run. 
 on:
   push:
     branches:
       - '**'
 
-env:
-    APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-    APPLITOOLS_BATCH_ID: ${{ github.sha }}
-  
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  test:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     - name: Checkout
-       uses: actions/checkout@v2
-     - name: Log Git SHA
-       run: echo "$GITHUB_SHA"
-     - name: Use Node.js
-       uses: actions/setup-node@v1
-       with:
-         node-version: '14.x'
-     - run: npm ci
-     - name: Run Tests
-       run: npx eyes-storybook --conf applitools.config.js
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # - run: npm ci
+      
+      - run: npm install
+      
+      - run: npx eyes-storybook
+      
+        env: 
+          APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+          APPLITOOLS_BATCH_ID: ${{ github.sha }}
