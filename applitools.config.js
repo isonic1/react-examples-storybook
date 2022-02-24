@@ -13,9 +13,9 @@ module.exports = {
     apiKey: process.env.APPLITOOLS_API_KEY,  // as default used value from environment variable
     appName: 'My Storybook',
     
-  batchName: process.env.CI
-        ? undefined
-        : 'StorbookLocal',
+    batchName: process.env.CI
+          ? undefined
+          : 'StorbookLocal',
     
     batchId: process.env.APPLITOOLS_BATCH_ID,
     //parentBranchName: process.env.LAST_KNOWN_BRANCH_NAME, //aka 2.0
@@ -32,6 +32,6 @@ module.exports = {
     
     waitBeforeScreenshot: 1000,
     readStoriesTimeout: 30000,
-    puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
+    //puppeteerOptions: { args: ['--no-sandbox'], timeout: 0 },
     
 };
